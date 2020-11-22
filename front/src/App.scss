@@ -1,0 +1,37 @@
+@import "~bootstrap/scss/bootstrap";
+@import "variables.scss";
+
+
+.navbar{
+    background-color: $main-color;
+    a{
+        color: $light-color;
+    }
+}
+.search-result-list{
+    z-index: 10;
+    top: 40px;
+    position: absolute;
+    left: 0px;
+    .list-element{
+        background-color: $secondary-color-light;
+        cursor: pointer;
+        &:last-of-type{
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+    }
+    .list-element:hover {
+        background-color: $secondary-color;
+    }
+}
+
+.list-element-section{
+    p, h4{
+        display: inline;
+    }
+}
+
+.repo-view-img{
+    width: 20vw;
+}
