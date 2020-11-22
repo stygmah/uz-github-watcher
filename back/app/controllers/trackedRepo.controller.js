@@ -16,7 +16,6 @@ module.exports = {
     },
 
     getTrackedRepos: async (req,res) => {
-        console.log(req.params)
         if(req.params === null || !req.params.page){
             res.status(400).send();
             return;
